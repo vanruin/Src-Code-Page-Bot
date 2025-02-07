@@ -1,5 +1,3 @@
-const { sendMessage } = require('./sendMessage');
-
 const handlePostback = async (event, pageAccessToken) => {
   const { id: senderId } = event.sender || {};
   const { payload } = event.postback || {};
